@@ -179,8 +179,12 @@ if (age >= 18) {
     you.say("I am " + age)
     pause(2000)
     person.say("You may pass. You are old enough to vote.")
+    pause(5000)
+    you.setVelocity(50, 0)
 } else {
     you.say("I am " + age)
     pause(2000)
     person.say("Sorry, you may not pass. You are not old enough to vote.")
+    pause(5000)
+    you.setVelocity(-50, 0)
 }
